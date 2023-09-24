@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+    
+    font-family: 'Mooli', sans-serif;
+}
+body{
+    background-color: #F1F0E8;
+}  nav{
+    background-color: #F1F0E8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 0 2px 2px rgb(197, 195, 195);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    gap: 250px;
+  }
+  .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:6px;
+    font-size: 20px;
+  
+  }
+  .image{
+    border-radius: 100%;
+    padding: 10px;
+    background-color: #96B6C5;
+    color: #EEE0C9;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .text{
+    color: #96B6C5;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+  .nav-links{
+    margin-right: 20px;
+  }
+  .nav-links a:link {
+    color: black;
+  }
+  .nav-links a:visited {
+    color: black;
+  }
+  .nav-links a:hover {
+    color: black;
+  }
+  .nav-links a:active {
+    color: black;
+    
+  }
+  .nav-links a{
+    text-decoration: none;
+  }
+  
+  .login{
+    background-color: #96B6C5;
+    border-radius: 20px;
+    color: #EEE0C9;
+    padding: 9px 20px;
+    cursor: pointer;
+    animation:forwards;
+  }
+   a{
+    text-decoration: none;
+  }
+  a:link {
+    color: rgb(255, 255, 255);
+  }
+   a:visited {
+    color: rgb(255, 255, 255);
+  }
+   a:hover {
+    color: rgb(255, 255, 255);
+   }
+  a:active {
+    color: rgb(255, 255, 255);
+  }
+  .hamburger-menu{
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      align-self: center;
+      align-content: center;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0; 
+        width: 100%;
+        background-color: #EEE0C9;
+        z-index: 1;
+        padding: 30px;gap: 10px;
+       
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+  
+    .nav-links a {
+        padding: 10px;
+        text-align: center;
+    }
+  
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+  
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #96B6C5;
+        margin: 4px 0;
+    }
+  }
+  
+
+.heading{
+    margin-top: 8%;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 1.6rem;
+}
+.intro{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro_image{
+    width: 400px;
+    height: 300px;
+    background-image: url(/articles/introsocial.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 2%;
+    border: solid 1px #00010050;
+}
+.intro_text{
+    margin-top: 2%;
+    width: 60%;
+    font-size: 1.2em;
+}
+.segments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+.seg1{
+    background-color: #EEE0C960;
+    padding: 50px;
+    height: 50%;
+    width: 70%;
+    margin-top: 5%;
+    display: flex;
+    gap: 30px;
+    box-shadow: 3px 3px 5px rgb(197, 195, 195);
+}
+.img_seg1{
+    margin-top:0;
+    width: 100%;
+    background: url('/articles/adoubleedgedsword.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.txt_seg1{
+    width: 80%;
+}
+.hg{
+    font-size: 2.5rem;
+}
+.seg2{
+    background-color: #EEE0C960;
+    height: 50%;
+    width: 70%;
+    padding: 50px;
+    margin-top: 5%;
+    display: flex;
+    gap: 20px;
+    box-shadow: -3px 3px 5px rgb(197, 195, 195);
+}
+.img_seg2{
+    margin-top:0;
+    width: 100%;
+    background-image: url(/articles/tipssocial.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.txt_seg2{
+    width: 100%;
+}
+.seg3{
+    background-color: #EEE0C960;
+    height: 50%;
+    width: 70%;
+    padding: 50px;
+    margin-top: 5%;
+    display: flex;
+    gap: 20px;
+    box-shadow: 3px 3px 5px rgb(197, 195, 195);
+    margin-bottom: 3%;
+}
+.img_seg3{
+    margin-top:0;
+    width: 100%;
+    background-image: url(/articles/effectssocial.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.txt_seg3{
+    width: 100%;
+    padding-left: 40px;
+}
+ol{
+    margin-left :40px;
+}
+@media screen and (max-width: 768px) {
+    .seg1, .seg2 ,.seg3{
+        flex-direction: column;
+    }
+    .heading{
+        margin-top: 15%;
+    }
+  }
+  
+  .move-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5792c9;
+    color: #fff;
+    border: none;
+    border-radius: 100%;
+    padding:  18px 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.move-to-top-button:hover {
+    background-color: #555;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(131, 127, 127, 0.8); 
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(233, 233, 233, 0.4); 
+  }

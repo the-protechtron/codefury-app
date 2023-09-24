@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+
+*{
+  font-family: 'Mooli', sans-serif;
+  box-sizing: border-box;
+}
+body{
+    background: #F1F0E8;
+}
+h1{}
+    h1,h2{
+        text-align: center;
+    }
+       .holder{
+        margin-top: 30px;
+        display: block;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+       p{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+       }
+       nav{
+    background-color: #F1F0E8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 0 2px 2px rgb(197, 195, 195);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    left: 0;
+    gap: 250px;
+  }
+  .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:6px;
+    font-size: 20px;
+  
+  }
+  .image{
+    border-radius: 100%;
+    padding: 10px;
+    background-color: #96B6C5;
+    color: #EEE0C9;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .text{
+    color: #96B6C5;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+  .nav-links{
+    margin-right: 20px;
+  }
+  .nav-links a:link {
+    color: black;
+  }
+  .nav-links a:visited {
+    color: black;
+  }
+  .nav-links a:hover {
+    color: black;
+  }
+  .nav-links a:active {
+    color: black;
+    
+  }
+  .nav-links a{
+    text-decoration: none;
+  }
+  
+  .login{
+    background-color: #96B6C5;
+    border-radius: 20px;
+    color: #EEE0C9;
+    padding: 9px 20px;
+    cursor: pointer;
+    animation:forwards;
+  }
+   a{
+    text-decoration: none;
+  }
+  a:link {
+    color: rgb(255, 255, 255);
+  }
+   a:visited {
+    color: rgb(255, 255, 255);
+  }
+   a:hover {
+    color: rgb(255, 255, 255);
+   }
+  a:active {
+    color: rgb(255, 255, 255);
+  }
+  .hamburger-menu{
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      
+      align-content: center;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #EEE0C9;
+        z-index: 1;
+        gap: 10px;
+       
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+  
+    .nav-links a {
+        padding: 10px;
+        text-align: center;
+    }
+  
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+  
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #96B6C5;
+        margin: 4px 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    iframe{
+        width: 550px;
+        height: 300px;
+    }
+    p{
+      
+        padding: 10px;
+    }
+  }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <div class="image">
+            <strong>em</strong>
+          </div>
+          <div class="text">
+            <strong>eudemonia</strong>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index2.html">Products</a>
+          <a href="index2.html">Music</a>
+          <a href="index2.html">Articles</a>
+          <a href="index2.html">About Us</a>
+        </div>
+        <!-- <a href="#">
+          <div class="login"><strong>LOGIN</strong></div>
+           </a> -->
+          <div class="hamburger-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+      </nav>
+      <script>
+          const hamburgerMenu = document.querySelector(".hamburger-menu");
+              const navLinks = document.querySelector(".nav-links");
+              
+              hamburgerMenu.addEventListener("click", () => {
+                  navLinks.classList.toggle("active");
+              });
+  
+              </script>
+    
+    <div class="holder">
+    <h1><strong>Medidation</strong></h1>
+
+    <h2>Play this video while you start meditating!</h2>
+    
+    <iframe width="790" height="444" src="https://www.youtube.com/embed/videoseries?list=PL9gMf2eXVikJT69_XAl-8KKOfBuFfF9SA&index=1" title="5 Minute Meditation Music - with Earth Resonance Frequency for Deeper Relaxation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+    <p>
+        Fitness and meditation are essential for digital well-being. Regular exercise combats sedentary habits, reducing the risk of health issues caused by excessive screen time. Meditation is a powerful stress-reduction tool, enhancing focus, emotional resilience, and mindful tech use. Together, these practices promote a holistic approach to well-being, addressing physical and mental health. They also encourage digital detox by prompting breaks from screens and the setting of healthy boundaries. To incorporate them effectively, set attainable goals and schedules. Achieving this balance fosters a healthier and more mindful relationship with technology, contributing to overall well-being in the digital age.
+    </p>
+</div>
+</body>
+</html>

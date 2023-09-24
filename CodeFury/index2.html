@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eudemonia</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const preloader = document.querySelector('.preloader');
+
+    preloader.style.display = 'flex';
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 2000);
+});
+    </script>
+    <nav>
+        <div class="logo">
+            
+                <div class="image">
+                   <strong>em</strong>
+                </div>
+                <div class="text">
+                    <strong>eudemonia</strong>
+                </div>
+            
+        </div>
+            <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Music</a>
+            <a href="#">Articles</a>
+            <a href="#">About Us</a>
+            <!-- <a href="login.html">
+                <div class="login"><strong>LOGIN</strong></div>
+            </a> -->
+        </div>
+        <!-- <a href="login.html">
+            <div class="login"><strong>LOGIN</strong></div>
+        </a> -->
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <script>
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+            const navLinks = document.querySelector(".nav-links");
+            
+            hamburgerMenu.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+
+            </script>
+    </nav>
+     <!-- hero page -->
+     <div class="hero">
+        <img src="Word_Art.png">
+     </div>
+
+     <!-- products -->
+     <div class="pro-main">
+        <h1><strong>OUR PRODUCTS</strong></h1>
+        <div class="products">
+        
+            <div class="probox">
+                <a href="sleep.html">
+                <div class="titlepic" id="boxOne"></div>
+                <div class="tracker"><strong>Sleep Tracker</strong></div>
+            </a>
+            </div>
+        
+            <div class="probox">
+                <a href="media.html">
+                <div class="titlepic"  id="boxTwo"></div>
+                <div class="tracker"><strong>Social Media Usage Tracker</strong></div>
+            </a>
+            </div>
+            <div class="probox">
+                <a href="meditation.html">
+                <div class="titlepic" id="boxThree"></div>
+                <div class="tracker"><strong>Fitness & Meditation Tracker</strong></div>
+                </a>
+            </div>
+           
+         </div>
+     </div>
+    
+
+     <!-- blog -->
+     <div class="blog">
+        <h1><strong>ARTICLES</strong></h1>
+     <div class="articles">
+      
+        <div class="box">
+            <a href="influencesocial.html">
+            <div class="pics" id="one"></div>
+            <div class="heading"><strong>the influence of social media on mental health</strong></div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="productivity.html">
+            <div class="pics" id="two"></div>
+            <div class="heading"><strong>The interplay between productivity and mental health</strong></div>
+        </div>
+        <div class="box">
+            <a href="yoga.html">
+           <div class="pics" id="three"></div>
+            <div class="heading"><strong>yoga and meditation practices to boost your well being</strong></div>
+       </a>
+        </div>
+        <div class="box">
+            <a href="insomnia.html">
+            <div class="pics" id="four"></div>
+            <div class="heading"><strong>steps to avoid insomnia and improve your sleep</strong></div>
+        </a>
+        </div>
+        
+     </div>
+    </div>
+    <button id="moveToTopButton" class="move-to-top-button">&#9650;</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const moveToTopButton = document.getElementById("moveToTopButton");
+
+    
+    window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+            moveToTopButton.style.display = "block";
+        } else {
+            moveToTopButton.style.display = "none";
+        }
+    });
+
+    
+    moveToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+    </script>
+     <section class="aboutus">
+        <div class="title">
+            <strong>ABOUT US</strong>
+         </div>
+           
+         <div class="contentabout">
+            We're Karthikeyan, Danish, Chandan, and Keshava, driven by a shared purpose: advancing digital wellbeing. In today's digital-centric world, we aim to foster balance and mindfulness online. Our platform offers educational resources, curated tools, a supportive community, and consultation services to empower individuals. We believe digital wellbeing is a collective responsibility, and together, we can navigate the digital landscape while prioritizing mental and emotional health. Join us in creating a more mindful digital world. Thank you for sharing in our commitment.
+         </div>
+        
+       </section>
+       <div class="contact">
+           <div><strong>Keshav : </strong><a href="mailto:kkhassan2004@gmail.com">kkhassan2004@gmail.com</a></div>
+           <div><strong>Karthikeyan : </strong><a href="mailto:karthikeyant@ieee.org">karthikeyant@ieee.org</a></div>
+           <div><strong>Chandan : </strong> <a href="mailto:chandanuvm@gmail.com">chandanuvm@gmail.com</a></div>
+           <div><strong>Danish : </strong> <a href="mailto:danishshariff92@gmail.com">danishshariff92@gmail.com</a></div>
+       </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Tracker</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const preloader = document.querySelector('.preloader');
+
+    preloader.style.display = 'flex';
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 500);
+});
+    </script>
+    <nav>
+        <div class="logo">
+            
+                <div class="image">
+                   <strong>em</strong>
+                </div>
+                <div class="text">
+                    <strong>eudemonia</strong>
+                </div>
+            
+        </div>
+            <div class="nav-links">
+            <a href="index2.html">Home</a>
+            <a href="index2.html">Products</a>
+            <a href="index2.html">Articles</a>
+            <a href="index2.html">Music</a>
+            <a href="index2.html">About Us</a>
+        </div>
+        <!-- <a href="#">
+            <div class="login"><strong>LOGIN</strong></div>
+        </a> -->
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <script>
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+            const navLinks = document.querySelector(".nav-links");
+            
+            hamburgerMenu.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+
+            </script>
+    </nav>
+    <div class="container">
+        <h1>Social Media Tracker</h1>
+        <form id="sleepForm">
+            <label for="hours">No. of Hours spent on Instagram:</label>
+            <input type="number" id="instagram"  min="0" max="24">  
+            <label for="hours">No. of Hours spent on Facebook:</label>
+            <input type="number" id="facebook" min="0" max="24">  
+            <label for="hours">No. of Hours spent on WhatsApp:</label>
+            <input type="number" id="whatsapp" min="0" max="24">  
+            <label for="hours">No. of Hours spent on Threads:</label>
+            <input type="number" id="threads" min="0" max="24">  
+            <label for="hours">No. of Hours spent on X:</label>
+            <input type="number" id="x" min="0" max="24">   <Br>         
+            <button type="submit">Submit</button>
+           
+            
+            <div id="result" class="hidden">
+                <h2>Your Social Media Tracking Information:</h2>
+                <p>Total Number of Hours of Social Media: <span id="resultHours"></span></p>
+                <p id="feedback"></p>
+            </div>
+        </div>
+        
+    </form>
+    <script src="media.js"></script>
+</body>
+</html>

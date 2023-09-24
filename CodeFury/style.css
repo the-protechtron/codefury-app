@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+
+*{
+  font-family: 'Mooli', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F1F0E8;
+  margin: 0;
+ 
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(131, 127, 127, 0.8); 
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: rgba(233, 233, 233, 0.4); 
+}
+
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+nav{
+  background-color: #F1F0E8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 70px;
+  align-items: center;
+  font-size: 16px;
+  box-shadow: 0 2px 2px rgb(197, 195, 195);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  gap: 250px;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:6px;
+  font-size: 20px;
+
+}
+.image{
+  border-radius: 100%;
+  padding: 10px;
+  background-color: #96B6C5;
+  color: #EEE0C9;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+}
+.text{
+  color: #96B6C5;
+}
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+.nav-links{
+  margin-right: 20px;
+}
+.nav-links a:link {
+  color: black;
+}
+.nav-links a:visited {
+  color: black;
+}
+.nav-links a:hover {
+  color: black;
+}
+.nav-links a:active {
+  color: black;
+  
+}
+.nav-links a{
+  text-decoration: none;
+}
+
+.login{
+  background-color: #96B6C5;
+  border-radius: 20px;
+  color: #EEE0C9;
+  padding: 9px 20px;
+  cursor: pointer;
+  animation:forwards;
+}
+ a{
+  text-decoration: none;
+}
+a:link {
+  color: rgb(255, 255, 255);
+}
+ a:visited {
+  color: rgb(255, 255, 255);
+}
+ a:hover {
+  color: rgb(255, 255, 255);
+ }
+a:active {
+  color: rgb(255, 255, 255);
+}
+.hamburger-menu{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    align-self: center;
+    align-content: center;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0; 
+      width: 100%;
+      background-color: #EEE0C9;
+      z-index: 1;
+      padding: 30px;gap: 10px;
+     
+  }
+  
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links a {
+      padding: 10px;
+      text-align: center;
+  }
+
+  .hamburger-menu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+  }
+
+  .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #96B6C5;
+      margin: 4px 0;
+  }
+}
+
+/* hero */
+.hero{
+  width: 100%;
+  display: flex;
+  background-color:#EEE0C9;
+  justify-content: center;
+}
+img{
+  width: 90%;
+  /* justify-self: center; */
+  
+}
+@media screen and (max-width: 768px) {
+  .hero{
+    padding-top: 40px;
+  }
+}
+
+
+
+/* articles */
+.blog{
+  animation: 2s infinite;
+  display: flex;
+  flex-direction: column;
+  background-color: #EEE0C9;
+  height: 100%;
+  padding: 15px;
+  width: 100%;
+}
+h1{
+  text-align: center;font-size: 50px;
+  
+}
+.articles{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-evenly;
+  padding: 15px;
+ 
+
+}
+.box{
+  width: 23%;
+  padding:15px;
+  display: flex;
+  flex-direction: column;
+  /* height: 500px */
+  /* gap: 5px; */
+  /* background-color: #F1F0E8 ; */
+  border-radius: 20px;
+  padding-bottom: 50px;
+}
+.box:hover{
+  scale: 103%;
+  /* transition: 1s; */
+ 
+  
+}
+.pics{
+  background-color: rgb(86, 90, 86);
+  height: 300px; 
+  border-radius: 20px  20px 0 0;
+}
+.heading{
+  display: flex;
+  background-color: rgb(207, 207, 227);
+  height: 120px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  text-transform : capitalize;
+  /* padding: 20px; */
+  border-radius: 0 0 20px 20px;
+
+}
+#one{
+  background:url('assets/influencesocial.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+#two{
+  background:url('assets/mental-health-and-productivity-at-workplace.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+#three{
+  background:url('assets/yoga.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+}
+#four{
+  background:url('assets/insomnia.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .articles {
+    flex-direction: column; 
+    gap: 30px;
+  }
+
+  .box {
+    width: 100%; 
+  }
+
+  .pics {
+    height: 200px; 
+  }
+  .heading{
+    height: 75px;
+  }
+}
+
+
+
+
+.pro-main{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #EEE0C9; */
+  height: 100%;
+  padding: 15px;
+}
+h1{
+  text-align: center;font-size: 50px;
+  
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+ a:hover {
+  color: black;
+}
+a:active {
+  color: black; 
+}
+a{
+  text-decoration: none;
+}
+.products{
+  animation: infinite;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 15px;
+  justify-content: space-evenly;
+}
+.titlepic{
+ 
+  height: 300px; 
+  border-radius: 20px  20px 0 0;
+}
+#boxOne{
+  background:url('assets/sleep.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+#boxTwo{
+  background:url('assets/social-media.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+#boxThree{
+  background:url('assets/a-complete-guide-to-meditation-722x406.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+}
+.titlepic img{
+  width: 100%;
+  overflow: hidden;
+}
+.tracker{
+  display: flex;
+  background-color: rgb(207, 207, 227);
+  height: 120px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  text-transform : capitalize;
+  /* padding: 20px; */
+  border-radius: 0 0 20px 20px;
+
+}
+.probox{
+  transition: 1s;
+  width: 30%;
+ padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  /* height: 500px */
+  /* gap: 5px; */
+  /* background-color: #F1F0E8 ; */
+  border-radius: 20px;
+ 
+  
+}
+.probox:hover{
+  scale: 105%;
+  /* transition: 1s; */
+  animation: 2s infinite;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    flex-direction: column; 
+    gap: 30px;
+   justify-items: center;
+  }
+
+  .probox{
+    width: 100%; 
+    padding:3% 10% ;
+  }
+
+  .titlepic {
+    height: 200px; 
+  }
+    .tracker{
+    height: 75px;
+    font-size: 20px;
+  }
+}
+.move-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #5792c9;
+  color: #fff;
+  border: none;
+  border-radius: 100%;
+  padding:  18px 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.move-to-top-button:hover {
+  background-color: #555;
+}
+
+
+.aboutus{
+  display: flex;
+  height: 20%;
+  background: #96b6c595;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 15px ;
+}
+.title{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.contentabout{
+  width: 100%;
+ padding : 10px 160px;
+  text-align: center;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+ .contact{
+  display: flex;
+  justify-content: space-evenly;
+  height: 30px;
+  align-items: center;
+  padding: 10px;
+ }
+
+ @media screen and (max-width: 768px) {
+.contact{
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height:auto;
+}
+
+.aboutus .contentabout
+{
+  font-size: 20px;
+  justify-content: center;
+  margin:0;
+  padding: 0;
+}
+ }
